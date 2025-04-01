@@ -78,7 +78,7 @@ Untuk menyesuaikan dengan kebutuhan Anda:
    Ubah di file `order.html` pada bagian metode pembayaran
 
 2. **Nomor WhatsApp**:  
-   Ganti semua `6281573236181` dengan nomor Anda di:
+   Ganti semua `6282129448933` dengan nomor Anda di:
    - `index.html`
    - `order.html`
    - `pricelist.html`
@@ -110,5 +110,5 @@ Pull request dipersilakan. Untuk perubahan besar, buka issue terlebih dahulu.
 
 ---
 
-**BoostMedia** © 2025 - [Hubungi Kami](https://wa.me/6281573236181)
+**BoostMedia** © 2025 - [Hubungi Kami](https://wa.me/6282129448933)
 ```
