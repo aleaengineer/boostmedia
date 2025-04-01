@@ -1,0 +1,375 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+:root {
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --dark: #212529;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Hero Section Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Services Section */
+.service-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    color: var(--primary);
+    font-size: 32px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Contact Icons */
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--primary);
+}
+
+/* Section Titles */
+h2 {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        text-align: center;
+    }
+    
+    .hero-section .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+}
+
+/* Price List Section */
+.price-list-section {
+    padding-top: 80px;
+}
+
+.price-list-card .card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.price-list-card .card:hover {
+    transform: translateY(-5px);
+}
+
+.price-list-card .card-header {
+    border-radius: 0 !important;
+    padding: 15px 20px;
+}
+
+.price-list-card .table {
+    margin-bottom: 0;
+}
+
+.price-list-card .table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+}
+
+.price-list-card .table td {
+    vertical-align: middle;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .price-list-card .btn {
+        white-space: nowrap;
+    }
+}
+
+/* Gaya untuk alert peringatan */
+.alert-warning {
+    border-left: 4px solid #ffc107;
+    border-radius: 0 8px 8px 0;
+}
+
+.alert-heading {
+    color: #856404;
+    font-size: 1.1rem;
+}
+
+/* Tombol dalam alert */
+.alert .btn-outline-warning {
+    border-color: #ffc107;
+    color: #856404;
+}
+
+.alert .btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .alert .d-flex {
+        flex-direction: column;
+    }
+    
+    .alert .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+
+/* Order Section */
+.order-section {
+    padding-top: 80px;
+}
+
+.order-section .card {
+    border: none;
+    border-radius: 10px;
+}
+
+.order-section .card-header {
+    border-radius: 10px 10px 0 0 !important;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+/* Form Styles */
+.form-select, .form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.btn-submit {
+    padding: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .order-section {
+        padding-top: 70px;
+    }
+    
+    .order-section .card {
+        border-radius: 0;
+    }
+}
+
+/* Gaya untuk metode pembayaran */
+.form-check {
+    margin-bottom: 10px;
+    padding-left: 1.8em;
+}
+
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.2em;
+}
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+}
+
+/* QRIS Section */
+#qrisSection {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .form-check {
+        padding-left: 1.5em;
+    }
+}
+
+/* Gaya untuk metode pembayaran */
+#paymentMethod {
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+/* Info pembayaran */
+#paymentInfo {
+    border-radius: 8px;
+    padding: 12px 15px;
+}
+
+/* QRIS Section */
+#qrisSection {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    #paymentMethod {
+        padding: 10px 12px;
+    }
+    
+    #paymentInfo, #qrisSection {
+        padding: 15px;
+    }
+}
